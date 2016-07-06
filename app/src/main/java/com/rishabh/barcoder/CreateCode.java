@@ -50,6 +50,7 @@ public class CreateCode extends AppCompatActivity {
     private final static String APP_TITLE = "Barcoder";// App Name
     private final static String APP_PNAME = "com.rishabh.barcoder";// Package Name
     private Bitmap bitmap ;
+    private final static int WIDTH=500;
     private InterstitialAd mInterstitialAd;
 
     @Override
@@ -196,8 +197,6 @@ public class CreateCode extends AppCompatActivity {
         });
         t.start();
     }
-
-    private final static int WIDTH=500;
 
     private Bitmap encodeAsBitmap(String str) throws WriterException {
         BitMatrix result;

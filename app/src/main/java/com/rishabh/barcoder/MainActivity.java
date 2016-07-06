@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                         sharingIntent.setType("text/plain");
-                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Hey, I just used Barcoder to decode a barcode and here is the extracted data");
+                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, APP_TITLE);
                         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, string);
                         startActivity(Intent.createChooser(sharingIntent, "Share via"));
                         dialog.dismiss();
@@ -279,8 +279,8 @@ public class MainActivity extends AppCompatActivity {
         // Wait at least n days before opening
         if (launch_count >= LAUNCHES_UNTIL_PROMPT) {
             if (System.currentTimeMillis() >= date_firstLaunch +(DAYS_UNTIL_PROMPT * 24 * 60 * 60 * 1000)) {
-                editor.putLong("launch_count", 8);
-                editor.putLong("date_firstlaunch", 2* 24 * 60 * 60 * 1000+System.currentTimeMillis());
+                editor.putLong("launch_count", 7);
+                editor.putLong("date_firstlaunch",System.currentTimeMillis()-  24 * 60 * 60 * 1000);
                 showRateDialog(editor);
             }
         }
