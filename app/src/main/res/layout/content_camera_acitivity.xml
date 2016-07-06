@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CameraActivity"
+    tools:showIn="@layout/activity_camera_acitivity">
+    <com.rishabh.barcoder.CameraSourcePreview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surface_view"
+        android:layout_centerInParent="true">
+
+        <com.rishabh.barcoder.GraphicOverlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/overlay"/>
+
+    </com.rishabh.barcoder.CameraSourcePreview>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        android:onClick="share"
+        android:padding="25dp"
+        android:background="@drawable/share_background"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_menu_share"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/copy"
+        android:onClick="copy"
+        android:layout_below="@+id/share"
+        android:padding="25dp"
+        android:background="@drawable/share_background"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_content_copy_white_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/barcode_info"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

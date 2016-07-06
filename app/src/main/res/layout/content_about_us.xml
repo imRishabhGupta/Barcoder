@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rishabh.barcoder.AboutUs"
+    tools:showIn="@layout/activity_about_us">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#37474F"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Barcoder"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:id="@+id/rate"
+                    android:src="@drawable/ic_star_rate_white_18dp"
+                    android:background="@drawable/share_background"/>
+                <ImageView android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/logo"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:onClick="onClick"
+                    android:id="@+id/share"
+                    android:background="@drawable/share_background"
+                    android:src="@android:drawable/ic_menu_share"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:padding="15dp"
+                android:text="@string/about_app"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/supported_formats"
+                android:textColor="#00B8D4"
+                android:padding="10dp"
+                android:id="@+id/barcode_formats"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Developer -"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="Rishabh Gupta"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageButton"
+                    android:background="@drawable/twitter"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="onClick"/>
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imageButton2"
+                    android:onClick="onClick"
+                    android:background="@drawable/linkedin"
+                    />
+
+                <ImageButton
+                    android:layout_width="37dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/imageButton6"
+                    android:onClick="onClick"
+                    android:background="@drawable/github"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

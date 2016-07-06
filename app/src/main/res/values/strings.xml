@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Barcoder</string>
+    <string name="title_activity_create_code">CreateCode</string>
+    <string-array name="barcode_formats">
+        <item>QR Code</item>
+        <item>Codabar</item>
+        <item>Aztech</item>
+        <item>Code 39</item>
+        <item>Code 93</item>
+        <item>Code 128</item>
+        <item>Data Matrix</item>
+        <item>EAN 8</item>
+        <item>EAN 13</item>
+        <item>ITF</item>
+        <item>Maxicode</item>
+        <item>PDF 417</item>
+        <item>RSS 14</item>
+        <item>RSS Expanded</item>
+        <item>UPC A</item>
+        <item>UPC E</item>
+        <item>UPC EAN Extension</item>
+    </string-array>
+    <string name="supported_formats">QR Code, Codabar, Aztech, Code 39, Code 93, Code 128, Data Matrix, EAN 8, EAN 13, ITF, Maxicode, PDF 417, RSS 14, RSS Expanded, UPC A, UPC E,UPC EAN Extension.</string>
+    <string name="about_app">Instant and reliable scans of most of the barcodes.\nCreate the high quality barcodes within seconds.\n And yes, Share codes and data as well!\nSupported barcode formats are</string>
+    <string name="banner_coder">ca-app-pub-5792178194954929/1987218693</string>
+    <string name="banner_coder2">ca-app-pub-5792178194954929/3324351092</string>
+    <string name="interstitial_coder">ca-app-pub-5792178194954929/7754550692</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="share_text_code">Hey, I just used Barcoder to decode a barcode and here is the extracted data.</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_camera_acitivity">CameraAcitivity</string>
+    <string name="title_activity_about_us">AboutUs</string>
+</resources>
