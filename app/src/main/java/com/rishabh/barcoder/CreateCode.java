@@ -62,7 +62,6 @@ public class CreateCode extends AppCompatActivity {
 
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("9BB67E6B330CB5844FD87C9FC5300131")
                 .build();
         mAdView.loadAd(adRequest);
 
@@ -138,7 +137,6 @@ public class CreateCode extends AppCompatActivity {
         mInterstitialAd.setAdUnitId("ca-app-pub-5792178194954929/9168211899");
 
         AdRequest adRequest1 = new AdRequest.Builder()
-                .addTestDevice("9BB67E6B330CB5844FD87C9FC5300131")
                 .build();
 
         mInterstitialAd.loadAd(adRequest1);
